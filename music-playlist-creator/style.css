@@ -59,7 +59,6 @@ nav{
 }
 
 
-
 /* Styling for the pop up */
 
 .modal-overlay {
@@ -72,14 +71,37 @@ nav{
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(5px);
 }
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto;
+    margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 35%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+/* .modal-content > h3, 
+.modal-content > p {
+    font-size: 1.5em;
+} */
+
+.detail-img {
+    margin-right: 30px;
+    width: 150px;
+    float: left;
+    border-radius: 10px;
+}
+
+.shuffle-btn {
+    border: 1px;
+    padding: 10px;
+    width: 100px;
+    background-color: rgb(67, 67, 228);
+    border-radius: 3px;
 }
 
 .close {

@@ -1,3 +1,5 @@
+// Function to display each of the playlist cards
+
 function renderPlaylists() {
     fetch('data/data.json')
     .then(response => response.json())
@@ -11,8 +13,8 @@ function renderPlaylists() {
 
             card.innerHTML = `
                 <img src="${playlist.playlist_cover}" alt="${playlist.playlist_name} Cover" class="cover-img" width = 100px/>
-                <h3>${playlist.playlist_name}</h3>
-                <p>Created by ${playlist.playlist_author}</p>
+                <h3 id="playlist_name">${playlist.playlist_name}</h3>
+                <p i>Created by ${playlist.playlist_author}</p>
                 <button class="like-btn" data-index="${index}">
                 ❤️ <span class="like-cnt">${playlist.playlist_likes}</span>
                 </button>
@@ -40,3 +42,13 @@ function renderPlaylists() {
 }
 
 renderPlaylists();
+
+// Function to view playlist details
+const modal = document.querySelector(".modal-overlay");
+const playlist_imgs = document.querySelectorAll(".cover-img");
+
+playlist_imgs.forEach(image => {
+    image.addEventListener("click", () => {
+        modal.style.display = 'flex';
+    });
+});

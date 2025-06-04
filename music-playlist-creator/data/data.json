@@ -6,7 +6,44 @@
         "playlist_author": "Melody Maven",
         "playlist_art": "artist 1",
         "playlist_likes": 0,
-        "songs": "songs"
+        "songs": [
+            {
+                "songTitle": "Placeholder Title 1",
+                "artistName": "Placeholder Artist 1",
+                "albumName": "Placeholder Album 1",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 2",
+                "artistName": "Placeholder Artist 2",
+                "albumName": "Placeholder Album 2",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 3",
+                "artistName": "Placeholder Artist 3",
+                "albumName": "Placeholder Album 3",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 4",
+                "artistName": "Placeholder Artist 4",
+                "albumName": "Placeholder Album 4",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 5",
+                "artistName": "Placeholder Artist 5",
+                "albumName": "Placeholder Album 5",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 6",
+                "artistName": "Placeholder Artist 6",
+                "albumName": "Placeholder Album 6",
+                "songDuration": "00:00"
+            }
+        ]
     },
     {
         "playlistID": 1,
@@ -15,7 +52,44 @@
         "playlist_author": "Melody Maven",
         "playlist_art": "artist 1",
         "playlist_likes": 0,
-        "songs": "songs"
+        "songs": [
+            {
+                "songTitle": "Placeholder Title 1",
+                "artistName": "Placeholder Artist 1",
+                "albumName": "Placeholder Album 1",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 2",
+                "artistName": "Placeholder Artist 2",
+                "albumName": "Placeholder Album 2",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 3",
+                "artistName": "Placeholder Artist 3",
+                "albumName": "Placeholder Album 3",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 4",
+                "artistName": "Placeholder Artist 4",
+                "albumName": "Placeholder Album 4",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 5",
+                "artistName": "Placeholder Artist 5",
+                "albumName": "Placeholder Album 5",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 6",
+                "artistName": "Placeholder Artist 6",
+                "albumName": "Placeholder Album 6",
+                "songDuration": "00:00"
+            }
+        ]
     },
     {
         "playlistID": 1,
@@ -24,7 +98,44 @@
         "playlist_author": "Melody Maven",
         "playlist_art": "artist 1",
         "playlist_likes": 0,
-        "songs": "songs"
+        "songs": [
+            {
+                "songTitle": "Placeholder Title 1",
+                "artistName": "Placeholder Artist 1",
+                "albumName": "Placeholder Album 1",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 2",
+                "artistName": "Placeholder Artist 2",
+                "albumName": "Placeholder Album 2",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 3",
+                "artistName": "Placeholder Artist 3",
+                "albumName": "Placeholder Album 3",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 4",
+                "artistName": "Placeholder Artist 4",
+                "albumName": "Placeholder Album 4",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 5",
+                "artistName": "Placeholder Artist 5",
+                "albumName": "Placeholder Album 5",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 6",
+                "artistName": "Placeholder Artist 6",
+                "albumName": "Placeholder Album 6",
+                "songDuration": "00:00"
+            }
+        ]
     },
     {
         "playlistID": 1,
@@ -33,7 +144,44 @@
         "playlist_author": "Melody Maven",
         "playlist_art": "artist 1",
         "playlist_likes": 0,
-        "songs": "songs"
+        "songs": [
+            {
+                "songTitle": "Placeholder Title 1",
+                "artistName": "Placeholder Artist 1",
+                "albumName": "Placeholder Album 1",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 2",
+                "artistName": "Placeholder Artist 2",
+                "albumName": "Placeholder Album 2",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 3",
+                "artistName": "Placeholder Artist 3",
+                "albumName": "Placeholder Album 3",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 4",
+                "artistName": "Placeholder Artist 4",
+                "albumName": "Placeholder Album 4",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 5",
+                "artistName": "Placeholder Artist 5",
+                "albumName": "Placeholder Album 5",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 6",
+                "artistName": "Placeholder Artist 6",
+                "albumName": "Placeholder Album 6",
+                "songDuration": "00:00"
+            }
+        ]
     },
     {
         "playlistID": 1,
@@ -41,7 +189,44 @@
         "playlist_name": "Late Night Drive",
         "playlist_author": "Melody Maven",
         "playlist_art": "artist 1",
-        "songs": "songs"
+        "songs": [
+            {
+                "songTitle": "Placeholder Title 1",
+                "artistName": "Placeholder Artist 1",
+                "albumName": "Placeholder Album 1",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 2",
+                "artistName": "Placeholder Artist 2",
+                "albumName": "Placeholder Album 2",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 3",
+                "artistName": "Placeholder Artist 3",
+                "albumName": "Placeholder Album 3",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 4",
+                "artistName": "Placeholder Artist 4",
+                "albumName": "Placeholder Album 4",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 5",
+                "artistName": "Placeholder Artist 5",
+                "albumName": "Placeholder Album 5",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 6",
+                "artistName": "Placeholder Artist 6",
+                "albumName": "Placeholder Album 6",
+                "songDuration": "00:00"
+            }
+        ]
     },
     {
         "playlistID": 1,
@@ -50,7 +235,44 @@
         "playlist_author": "Melody Maven",
         "playlist_art": "artist 1",
         "playlist_likes": 0,
-        "songs": "songs"
+        "songs": [
+            {
+                "songTitle": "Placeholder Title 1",
+                "artistName": "Placeholder Artist 1",
+                "albumName": "Placeholder Album 1",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 2",
+                "artistName": "Placeholder Artist 2",
+                "albumName": "Placeholder Album 2",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 3",
+                "artistName": "Placeholder Artist 3",
+                "albumName": "Placeholder Album 3",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 4",
+                "artistName": "Placeholder Artist 4",
+                "albumName": "Placeholder Album 4",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 5",
+                "artistName": "Placeholder Artist 5",
+                "albumName": "Placeholder Album 5",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 6",
+                "artistName": "Placeholder Artist 6",
+                "albumName": "Placeholder Album 6",
+                "songDuration": "00:00"
+            }
+        ]
     },
     {
         "playlistID": 1,
@@ -59,7 +281,44 @@
         "playlist_author": "Melody Maven",
         "playlist_art": "artist 1",
         "playlist_likes": 0,
-        "songs": "songs"
+        "songs": [
+            {
+                "songTitle": "Placeholder Title 1",
+                "artistName": "Placeholder Artist 1",
+                "albumName": "Placeholder Album 1",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 2",
+                "artistName": "Placeholder Artist 2",
+                "albumName": "Placeholder Album 2",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 3",
+                "artistName": "Placeholder Artist 3",
+                "albumName": "Placeholder Album 3",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 4",
+                "artistName": "Placeholder Artist 4",
+                "albumName": "Placeholder Album 4",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 5",
+                "artistName": "Placeholder Artist 5",
+                "albumName": "Placeholder Album 5",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 6",
+                "artistName": "Placeholder Artist 6",
+                "albumName": "Placeholder Album 6",
+                "songDuration": "00:00"
+            }
+        ]
     },
     {
         "playlistID": 1,
@@ -68,6 +327,43 @@
         "playlist_author": "Melody Maven",
         "playlist_art": "artist 1",
         "playlist_likes": 0,
-        "songs": "songs"
+        "songs": [
+            {
+                "songTitle": "Placeholder Title 1",
+                "artistName": "Placeholder Artist 1",
+                "albumName": "Placeholder Album 1",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 2",
+                "artistName": "Placeholder Artist 2",
+                "albumName": "Placeholder Album 2",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 3",
+                "artistName": "Placeholder Artist 3",
+                "albumName": "Placeholder Album 3",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 4",
+                "artistName": "Placeholder Artist 4",
+                "albumName": "Placeholder Album 4",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 5",
+                "artistName": "Placeholder Artist 5",
+                "albumName": "Placeholder Album 5",
+                "songDuration": "00:00"
+            },
+            {
+                "songTitle": "Placeholder Title 6",
+                "artistName": "Placeholder Artist 6",
+                "albumName": "Placeholder Album 6",
+                "songDuration": "00:00"
+            }
+        ]
     }
 ]

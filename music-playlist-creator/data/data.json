@@ -1,0 +1,73 @@
+[
+    {
+        "playlistID": 1,
+        "playlist_cover": "assets/img/playlist.png",
+        "playlist_name": "Late Night Drive",
+        "playlist_author": "Melody Maven",
+        "playlist_art": "artist 1",
+        "playlist_likes": 0,
+        "songs": "songs"
+    },
+    {
+        "playlistID": 1,
+        "playlist_cover": "assets/img/playlist.png",
+        "playlist_name": "Late Night Drive",
+        "playlist_author": "Melody Maven",
+        "playlist_art": "artist 1",
+        "playlist_likes": 0,
+        "songs": "songs"
+    },
+    {
+        "playlistID": 1,
+        "playlist_cover": "assets/img/playlist.png",
+        "playlist_name": "Late Night Drive",
+        "playlist_author": "Melody Maven",
+        "playlist_art": "artist 1",
+        "playlist_likes": 0,
+        "songs": "songs"
+    },
+    {
+        "playlistID": 1,
+        "playlist_cover": "assets/img/playlist.png",
+        "playlist_name": "Late Night Drive",
+        "playlist_author": "Melody Maven",
+        "playlist_art": "artist 1",
+        "playlist_likes": 0,
+        "songs": "songs"
+    },
+    {
+        "playlistID": 1,
+        "playlist_cover": "assets/img/playlist.png",
+        "playlist_name": "Late Night Drive",
+        "playlist_author": "Melody Maven",
+        "playlist_art": "artist 1",
+        "songs": "songs"
+    },
+    {
+        "playlistID": 1,
+        "playlist_cover": "assets/img/playlist.png",
+        "playlist_name": "Late Night Drive",
+        "playlist_author": "Melody Maven",
+        "playlist_art": "artist 1",
+        "playlist_likes": 0,
+        "songs": "songs"
+    },
+    {
+        "playlistID": 1,
+        "playlist_cover": "assets/img/playlist.png",
+        "playlist_name": "Late Night Drive",
+        "playlist_author": "Melody Maven",
+        "playlist_art": "artist 1",
+        "playlist_likes": 0,
+        "songs": "songs"
+    },
+    {
+        "playlistID": 1,
+        "playlist_cover": "assets/img/playlist.png",
+        "playlist_name": "Late Night Drive",
+        "playlist_author": "Melody Maven",
+        "playlist_art": "artist 1",
+        "playlist_likes": 0,
+        "songs": "songs"
+    }
+]

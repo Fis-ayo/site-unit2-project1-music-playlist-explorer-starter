@@ -1,369 +1,109 @@
 [
     {
         "playlistID": 1,
-        "playlist_cover": "assets/img/playlist.png",
-        "playlist_name": "Late Night Drive",
-        "playlist_author": "Melody Maven",
-        "playlist_art": "artist 1",
-        "playlist_likes": 0,
+        "playlist_cover": "assets/img/topHits.jpg",
+        "playlist_name": "Top Hits",
+        "playlist_author": "Sandra Biss",
+        "playlist_likes": 5,
         "songs": [
-            {
-                "songTitle": "Placeholder Title 1",
-                "artistName": "Placeholder Artist 1",
-                "albumName": "Placeholder Album 1",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 2",
-                "artistName": "Placeholder Artist 2",
-                "albumName": "Placeholder Album 2",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 3",
-                "artistName": "Placeholder Artist 3",
-                "albumName": "Placeholder Album 3",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 4",
-                "artistName": "Placeholder Artist 4",
-                "albumName": "Placeholder Album 4",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 5",
-                "artistName": "Placeholder Artist 5",
-                "albumName": "Placeholder Album 5",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 6",
-                "artistName": "Placeholder Artist 6",
-                "albumName": "Placeholder Album 6",
-                "songDuration": "00:00"
-            }
+            { "song_cover": "assets/img/singing1.jpg", "songTitle": "Ordinary", "artistName": "Taylor Swift", "albumName": "Ordinary", "songDuration": "03:06"},
+            { "song_cover": "assets/img/singing3.jpg", "songTitle": "Easy Lover", "artistName": "Miley Cyrus", "albumName": "Something Beautiful", "songDuration": "03:06" },
+            { "song_cover": "assets/img/singing3.jpg", "songTitle": "That's So True", "artistName": "Gracie Abrams", "albumName": "The Secret of Us", "songDuration": "02:46" },
+            { "song_cover": "assets/img/singing4.jpg", "songTitle": "Die With A Smile", "artistName": "Lady Gaga, Bruno Mars", "albumName": "Die With A Smile", "songDuration": "04:11" },
+            { "song_cover": "assets/img/dancing2.jpg", "songTitle": "like JENNIE", "artistName": "JENNIE", "albumName": "Ruby", "songDuration": "02:03" }
         ]
     },
     {
-        "playlistID": 1,
-        "playlist_cover": "assets/img/playlist.png",
-        "playlist_name": "Late Night Drive",
-        "playlist_author": "Melody Maven",
-        "playlist_art": "artist 1",
+        "playlistID": 2,
+        "playlist_cover": "assets/img/jazz.jpg",
+        "playlist_name": "Jazz",
+        "playlist_author": "Ruth Matthew",
         "playlist_likes": 0,
         "songs": [
-            {
-                "songTitle": "Placeholder Title 1",
-                "artistName": "Placeholder Artist 1",
-                "albumName": "Placeholder Album 1",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 2",
-                "artistName": "Placeholder Artist 2",
-                "albumName": "Placeholder Album 2",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 3",
-                "artistName": "Placeholder Artist 3",
-                "albumName": "Placeholder Album 3",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 4",
-                "artistName": "Placeholder Artist 4",
-                "albumName": "Placeholder Album 4",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 5",
-                "artistName": "Placeholder Artist 5",
-                "albumName": "Placeholder Album 5",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 6",
-                "artistName": "Placeholder Artist 6",
-                "albumName": "Placeholder Album 6",
-                "songDuration": "00:00"
-            }
+            { "song_cover": "assets/img/instrument1.jpg", "songTitle": "Wilting", "artistName": "Glass Trio", "albumName": "Wilting", "songDuration": "04:31" },
+            { "song_cover": "assets/img/instrument2.jpg", "songTitle": "Carry On", "artistName": "Andy Luma Trio", "albumName": "Carry On", "songDuration": "03:14" },
+            { "song_cover": "assets/img/instrument1.jpg", "songTitle": "You never know", "artistName": "Art Beckett", "albumName": "You never know", "songDuration": "02:30" },
+            { "song_cover": "assets/img/instrument2.jpg", "songTitle": "For Us", "artistName": "V", "albumName": "Layover", "songDuration": "02:52" },
+            { "song_cover": "assets/img/instrumentalMix2.jpg","songTitle": "Fri(end)s", "artistName": "V", "albumName": "Layover", "songDuration": "03:00" }
         ]
     },
     {
-        "playlistID": 1,
-        "playlist_cover": "assets/img/playlist.png",
-        "playlist_name": "Late Night Drive",
-        "playlist_author": "Melody Maven",
-        "playlist_art": "artist 1",
+        "playlistID": 3,
+        "playlist_cover": "assets/img/dancehall.jpg",
+        "playlist_name": "Dancehall",
+        "playlist_author": "Abiba Jim",
         "playlist_likes": 0,
         "songs": [
-            {
-                "songTitle": "Placeholder Title 1",
-                "artistName": "Placeholder Artist 1",
-                "albumName": "Placeholder Album 1",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 2",
-                "artistName": "Placeholder Artist 2",
-                "albumName": "Placeholder Album 2",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 3",
-                "artistName": "Placeholder Artist 3",
-                "albumName": "Placeholder Album 3",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 4",
-                "artistName": "Placeholder Artist 4",
-                "albumName": "Placeholder Album 4",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 5",
-                "artistName": "Placeholder Artist 5",
-                "albumName": "Placeholder Album 5",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 6",
-                "artistName": "Placeholder Artist 6",
-                "albumName": "Placeholder Album 6",
-                "songDuration": "00:00"
-            }
+            { "song_cover": "assets/img/song.png","songTitle": "Hold Yuh", "artistName": "Gyptian", "albumName": "EP", "songDuration": "03:52" },
+            { "song_cover": "assets/img/singing4.jpg","songTitle": "Like Glue", "artistName": "Sean Paul", "albumName": "EP", "songDuration": "03:52" },
+            { "song_cover": "assets/img/singing2.jpg","songTitle": "Blem", "artistName": "Drake", "albumName": "EP", "songDuration": "03:36" }
         ]
     },
     {
-        "playlistID": 1,
-        "playlist_cover": "assets/img/playlist.png",
-        "playlist_name": "Late Night Drive",
-        "playlist_author": "Melody Maven",
-        "playlist_art": "artist 1",
+        "playlistID": 4,
+        "playlist_cover": "assets/img/afrobeat.jpg",
+        "playlist_name": "Afrobeat",
+        "playlist_author": "Bayo Dell",
         "playlist_likes": 0,
         "songs": [
-            {
-                "songTitle": "Placeholder Title 1",
-                "artistName": "Placeholder Artist 1",
-                "albumName": "Placeholder Album 1",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 2",
-                "artistName": "Placeholder Artist 2",
-                "albumName": "Placeholder Album 2",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 3",
-                "artistName": "Placeholder Artist 3",
-                "albumName": "Placeholder Album 3",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 4",
-                "artistName": "Placeholder Artist 4",
-                "albumName": "Placeholder Album 4",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 5",
-                "artistName": "Placeholder Artist 5",
-                "albumName": "Placeholder Album 5",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 6",
-                "artistName": "Placeholder Artist 6",
-                "albumName": "Placeholder Album 6",
-                "songDuration": "00:00"
-            }
+            { "song_cover": "assets/img/dancing2.jpg", "songTitle": "Last Last", "artistName": "Burna Boy", "albumName": "Love, Damini", "songDuration": "02:52" },
+            { "song_cover": "assets/img/dancing1.jpg", "songTitle": "Essence (feat Justin Beiber)", "artistName": "Wizkid, Tems", "albumName": "Made In Lagos", "songDuration": "00:00" },
+            { "song_cover": "assets/img/dancing3.jpg", "songTitle": "For My Hand", "artistName": "Burna Boy, Ed Sheeran", "albumName": "Love Damini", "songDuration": "02:40" },
+            { "song_cover": "assets/img/dancing2.jpg", "songTitle": "Ye", "artistName": "Burna Boy", "albumName": "Outside", "songDuration": "03:51" },
+            { "song_cover": "assets/img/dancing1.jpg", "songTitle": "Bandana", "artistName": "Fireboy DML, Asake", "albumName": "Playboy", "songDuration": "02:50" }
         ]
     },
     {
-        "playlistID": 1,
-        "playlist_cover": "assets/img/playlist.png",
-        "playlist_name": "Late Night Drive",
-        "playlist_author": "Melody Maven",
-        "playlist_art": "artist 1",
+        "playlistID": 5,
+        "playlist_cover": "assets/img/happyHits.jpg",
+        "playlist_name": "Happy Hits",
+        "playlist_author": "Smith Smith",
+        "playlist_likes": 0,
         "songs": [
-            {
-                "songTitle": "Placeholder Title 1",
-                "artistName": "Placeholder Artist 1",
-                "albumName": "Placeholder Album 1",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 2",
-                "artistName": "Placeholder Artist 2",
-                "albumName": "Placeholder Album 2",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 3",
-                "artistName": "Placeholder Artist 3",
-                "albumName": "Placeholder Album 3",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 4",
-                "artistName": "Placeholder Artist 4",
-                "albumName": "Placeholder Album 4",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 5",
-                "artistName": "Placeholder Artist 5",
-                "albumName": "Placeholder Album 5",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 6",
-                "artistName": "Placeholder Artist 6",
-                "albumName": "Placeholder Album 6",
-                "songDuration": "00:00"
-            }
+            { "song_cover": "assets/img/singing3.jpg", "songTitle": "Cruel Summer", "artistName": "Taylor Swift", "albumName": "Lover", "songDuration": "02:58" },
+            { "song_cover": "assets/img/singing3.jpg", "songTitle": "Espresso", "artistName": "Sabrina Carpenter", "albumName": "Espresso", "songDuration": "02:55" },
+            { "song_cover": "assets/img/singing3.jpg", "songTitle": "Dance With Me", "artistName": "Tones amd I", "albumName": "Dance With Me", "songDuration": "03:45" }
         ]
     },
     {
-        "playlistID": 1,
-        "playlist_cover": "assets/img/playlist.png",
-        "playlist_name": "Late Night Drive",
-        "playlist_author": "Melody Maven",
-        "playlist_art": "artist 1",
+        "playlistID": 6,
+        "playlist_cover": "assets/img/instrumentalMix.jpg",
+        "playlist_name": "Instrumentals Mix",
+        "playlist_author": "Daniel Yan",
         "playlist_likes": 0,
         "songs": [
-            {
-                "songTitle": "Placeholder Title 1",
-                "artistName": "Placeholder Artist 1",
-                "albumName": "Placeholder Album 1",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 2",
-                "artistName": "Placeholder Artist 2",
-                "albumName": "Placeholder Album 2",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 3",
-                "artistName": "Placeholder Artist 3",
-                "albumName": "Placeholder Album 3",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 4",
-                "artistName": "Placeholder Artist 4",
-                "albumName": "Placeholder Album 4",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 5",
-                "artistName": "Placeholder Artist 5",
-                "albumName": "Placeholder Album 5",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 6",
-                "artistName": "Placeholder Artist 6",
-                "albumName": "Placeholder Album 6",
-                "songDuration": "00:00"
-            }
+            { "song_cover": "assets/img/instrumentalMix2.jpg", "songTitle": "Azure", "artistName": "Crystal Dreams", "albumName": "Oceans", "songDuration": "02:32" },
+            { "song_cover": "assets/img/instrument1.jpg", "songTitle": "Skyline", "artistName": "TAPI", "albumName": "Skyline", "songDuration": "02:10" },
+            { "song_cover": "assets/img/instrument2.jpg", "songTitle": "Martini", "artistName": "Alatra", "albumName": "Martini", "songDuration": "02:14" },
+            { "song_cover": "assets/img/song.png", "songTitle": "Truth Out", "artistName": "Leo Portela", "albumName": "WATERS ABOVE", "songDuration": "02:31" },
+            { "song_cover": "assets/img/instrument2.jpg", "songTitle": "Set Me Free", "artistName": "Akyra", "albumName": "Set Me Free", "songDuration": "02:14" }
         ]
     },
     {
-        "playlistID": 1,
-        "playlist_cover": "assets/img/playlist.png",
-        "playlist_name": "Late Night Drive",
-        "playlist_author": "Melody Maven",
-        "playlist_art": "artist 1",
+        "playlistID": 7,
+        "playlist_cover": "assets/img/worship.jpg",
+        "playlist_name": "Worship",
+        "playlist_author": "John David",
         "playlist_likes": 0,
         "songs": [
-            {
-                "songTitle": "Placeholder Title 1",
-                "artistName": "Placeholder Artist 1",
-                "albumName": "Placeholder Album 1",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 2",
-                "artistName": "Placeholder Artist 2",
-                "albumName": "Placeholder Album 2",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 3",
-                "artistName": "Placeholder Artist 3",
-                "albumName": "Placeholder Album 3",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 4",
-                "artistName": "Placeholder Artist 4",
-                "albumName": "Placeholder Album 4",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 5",
-                "artistName": "Placeholder Artist 5",
-                "albumName": "Placeholder Album 5",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 6",
-                "artistName": "Placeholder Artist 6",
-                "albumName": "Placeholder Album 6",
-                "songDuration": "00:00"
-            }
+            { "song_cover": "assets/img/song.png", "songTitle": "Be Glad (live)", "artistName": "Naomi Raine", "albumName": "Be Glad (live)", "songDuration": "08:53" },
+            { "song_cover": "assets/img/song.png", "songTitle": "All Fall Down - Live", "artistName": "The Belonging Co, Henry Seeley", "albumName": "Eden (live)", "songDuration": "08:27" },
+            { "song_cover": "assets/img/song.png", "songTitle": "Wait", "artistName": "Matt Maher", "albumName": "Wait/Praise The Giver", "songDuration": "04:08" }
         ]
     },
     {
-        "playlistID": 1,
-        "playlist_cover": "assets/img/playlist.png",
-        "playlist_name": "Late Night Drive",
-        "playlist_author": "Melody Maven",
-        "playlist_art": "artist 1",
+        "playlistID": 8,
+        "playlist_cover": "assets/img/afrogospel.jpg",
+        "playlist_name": "AfroGospel",
+        "playlist_author": "Ruth Matthew",
         "playlist_likes": 0,
         "songs": [
-            {
-                "songTitle": "Placeholder Title 1",
-                "artistName": "Placeholder Artist 1",
-                "albumName": "Placeholder Album 1",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 2",
-                "artistName": "Placeholder Artist 2",
-                "albumName": "Placeholder Album 2",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 3",
-                "artistName": "Placeholder Artist 3",
-                "albumName": "Placeholder Album 3",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 4",
-                "artistName": "Placeholder Artist 4",
-                "albumName": "Placeholder Album 4",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 5",
-                "artistName": "Placeholder Artist 5",
-                "albumName": "Placeholder Album 5",
-                "songDuration": "00:00"
-            },
-            {
-                "songTitle": "Placeholder Title 6",
-                "artistName": "Placeholder Artist 6",
-                "albumName": "Placeholder Album 6",
-                "songDuration": "00:00"
-            }
+            { "song_cover": "assets/img/song.png", "songTitle": "No Turing Back II", "artistName": "Gaise Baba, Lawrence Oyor", "albumName": "No Turning Back II", "songDuration": "04:59" },
+            { "song_cover": "assets/img/control1.jpg", "songTitle": "Bigger(Odogwu)", "artistName": "Prinx Emmanuel", "albumName": "Bigger(Odogwu)", "songDuration": "02:56" },
+            { "song_cover": "assets/img/concert1.jpg", "songTitle": "Good God II", "artistName": "Limoblaze, Naomi Raine", "albumName": "Good God (remix)", "songDuration": "03:01" },
+            { "song_cover": "assets/img/dancing3.jpg", "songTitle": "Never Find", "artistName": "Victor Thompson", "albumName": "EP", "songDuration": "04:00" },
+            { "song_cover": "assets/img/concert1.jpg", "songTitle": "Worthy of My Praise", "artistName": "Dunsin Oyekan, Lawrence Oyor", "albumName": "The Great Commission", "songDuration": "13:29" },
+            { "song_cover": "assets/img/control1.jpg", "songTitle": "Too Oiled", "artistName": "Victoria Orenze", "albumName": "Jesus Christ Vol.1", "songDuration": "12:14" }
         ]
     }
 ]

@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Music Playlist Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -23,11 +27,33 @@
 
     </header>
 
+    <div id="add-playlist-btn">
+        <span class="plusIcon">&plus;</span>
+        <span>New Playlist</span>
+    </div>
+    <div id="form-overlay">
+        <div id="form-content">
+            <span class="close"> &times; </span>
+            <form id="playlist-form">
+                <h2>Create New Playlist</h2>
+                <label for="playlist-name">Playlist Name:</label>
+                <input type="text" id="playlist-name" name="playlist-name" required>
+                <label for="playlist-author">Creator:</label>
+                <input type="text" id="playlist-author" name="playlist-name" required>
+                <button class="newSong">Add Song</button>
+                <br><br>
+
+                <button type="submit" id="createPlaylist">Create Playlist</button>
+            </form>
+        </div>
+    </div>
+
+
     <main>
         <!-- Your main content here -->
 
-        <div class="playlist-cards">
 
+        <div class="playlist-cards">
         </div>
 
     </main>
@@ -38,7 +64,8 @@
     </div>
 
     <footer>
-        <!-- Your footer content here -->
+        <p>Mercy Akinyemi</p>
+        <p>Copyright &copy; 2025 Your Company. All Rights Reserved.</p>
     </footer>
 
 

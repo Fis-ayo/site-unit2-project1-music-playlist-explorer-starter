@@ -1,5 +1,9 @@
+:root {
+    --textColor:var(#1a1a1a);
+}
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
@@ -12,6 +16,16 @@ header {
     background-color: rgb(209, 207, 207);
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #e7cfcf;
+    border: 1px;
+    margin: 0;
+    align-items: center;
+    width: 100%;
+}
+
 #title {
     margin: 20px;
 }
@@ -21,10 +35,14 @@ nav {
     float: right;
 }
 
-#featured {
+#featured, #all{
     margin-right: 10px;
     text-decoration: none;
     color: black;
+}
+#featured:hover,
+#all:hover {
+    color: rgb(61, 54, 161);
 }
 
 .emptyPlaylist {
@@ -52,8 +70,9 @@ nav {
 }
 
 .playlist-card p,
-.playlist-card button {
+.playlist-card .like-btn {
     margin: 15px 0 5px 30px;
+    color: var(--textColor);
 }
 
 .cover-img {
@@ -63,6 +82,16 @@ nav {
     cursor: pointer;
 }
 
+.like-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 15px;
+}
+
+.Icon {
+    width: 15px;
+}
 
 /* Styling for the pop up */
 
@@ -183,3 +212,74 @@ nav {
     margin-right: 10px;
     font-size: 11px;
 } 
+
+#add-playlist-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 5px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.plusIcon {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#form-overlay {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+#form-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 25%;
+    height: 30%;
+    border-radius: 10px;
+}
+
+#form-content h2 {
+    margin-top: 0;
+    justify-self: center;
+}
+
+#form-content input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    border: 1px solid #c0afaf;
+    border-radius: 5px;
+    box-shadow: inset;
+}
+
+#createPlaylist {
+    border: none;
+    margin-top: 12px;
+    padding: 8px 12px;
+    background-color: rgb(102, 102, 245);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px auto 0 auto;
+    display: block;
+}
+
+#createPlaylist:hover{
+    background-color: rgb(69, 69, 245);
+}

@@ -54,6 +54,8 @@ function displayPlaylists(playlistsToRender) {
         });
 
         card.querySelector(".edit-btn").addEventListener('click', () => {
+            document.getElementById("form-title").textContent = "Edit Playlist";
+            document.getElementById("createPlaylist").textContent = "Save Changes";
             const current = playlists[index];
 
             document.getElementById("new-name").value = current.playlist_name;
@@ -187,47 +189,40 @@ closePlaylist.addEventListener('click', () => {
     formOverlay.style.display = 'none';
 });
 
-// window.addEventListener('click', (event) => {
-//     if (event.target === modal) {
-//         modal.style.display = 'none';
-//     }
-// });
-
 addPlaylist.addEventListener("click", () => {
     formOverlay.style.display = 'flex';
+    resetSongInputs();
+    form.reset();
+    form.removeAttribute('data-edit-index');
 })
 
 const form = document.querySelector("#playlist-form");
-const songRows = document.querySelectorAll(".song-row");
-const songs = [];
 
-songRows.forEach(row => {
-    const title = row.querySelector(".song-name")?.value.trim();
-    const artist = row.querySelector(".artist-name")?.value.trim();
-    const album = row.querySelector(".album-name")?.value.trim();
-    const duration = row.querySelector(".song-duration")?.value.trim();
-
-    if (title && artist){
-        songs.push({
-            song_cover: "assets/img/song.png", 
-            songTitle: title, 
-            artistName: artist, 
-            albumName: album, 
-            songDuration: duration
-        })
-    };
-});
 
 form.addEventListener('submit', function (e) {
 
     e.preventDefault();
     const name = document.getElementById("new-name").value.trim();
     const author = document.getElementById("new-author").value.trim();
-    // const newSong = document.querySelector('.song-row').value.split("\n").map(line => {
-    //     const [title, artist, duration] = line.split("-").map(s=> s.trim());
-    //     return {title, artist, duration};
-    //});
-    // const cover = document.getElementById("playlist-cover").value.trim();
+    const songRows = document.querySelectorAll(".song-row");
+    const songs = [];
+
+    songRows.forEach(row => {
+        const title = row.querySelector(".song-name")?.value.trim();
+        const artist = row.querySelector(".artist-name")?.value.trim();
+        const album = row.querySelector(".album-name")?.value.trim();
+        const duration = row.querySelector(".song-duration")?.value.trim();
+
+        if (title && artist) {
+            songs.push({
+                song_cover: "assets/img/song.png",
+                songTitle: title,
+                artistName: artist,
+                albumName: album,
+                songDuration: duration
+            })
+        };
+    });
 
     const newPlaylist = {
         playlistID: Date.now(),
@@ -239,13 +234,14 @@ form.addEventListener('submit', function (e) {
     };
     // playlists.push(newPlaylist);
     const editIndex = form.getAttribute("data-edit-index");
-    if (editIndex !== null){
+    if (editIndex !== null) {
         playlists[editIndex] = newPlaylist;
         form.removeAttribute("data-edit-index");
-    }else {
+    } else {
         playlists.push(newPlaylist);
     }
     displayPlaylists(playlists);
+    console.log(playlists);
     form.reset();
     document.getElementById("form-overlay").style.display = "none";
 });
@@ -261,14 +257,19 @@ document.querySelector(".newSong").addEventListener("click", () => {
     <input type="text" placeholder="Artist name" class="artist-name" />
     <input type="text" placeholder="Album name" class="album name" />
     <input type="text" placeholder="Song duration" class="song-duration" />
+    <button type="button" class="remove-song" title="Remove">x</button>
     `;
 
     songContainer.appendChild(songRow);
+
+    songRow.querySelector(".remove-song").addEventListener("click", () => {
+        songRow.remove();
+    })
 })
 
 document.getElementById("clear-search-btn").addEventListener('click', () => {
-    document.getElementById("search-input").value= '';
-    document.getElementById("sort-dropdown").value= 'none';
+    document.getElementById("search-input").value = '';
+    document.getElementById("sort-dropdown").value = 'none';
     displayPlaylists(playlists);
 });
 
@@ -277,7 +278,7 @@ document.getElementById("sort-dropdown").addEventListener('change', filterAndSor
 document.getElementById("search-btn").addEventListener('click', filterAndSortPlaylists);
 
 document.getElementById("search-input").addEventListener('keyup', (e) => {
-    if(e.key === "Enter"){
+    if (e.key === "Enter") {
         filterAndSortPlaylists();
     }
 })
@@ -291,11 +292,16 @@ function filterAndSortPlaylists() {
         p.playlist_author.toLowerCase().includes(query)
     );
 
-    if(sort === "az") {
+    if (sort === "az") {
         result.sort((a, b) => a.playlist_name.localeCompare(b.playlist_name));
-    }else if (sort === "za"){
+    } else if (sort === "za") {
         result.sort((a, b) => b.playlist_name.localeCompare(a.playlist_name));
     }
 
     displayPlaylists(result);
+}
+
+function resetSongInputs() {
+    const container = document.getElementById("songs-container");
+    container.innerHTML = "";
 }

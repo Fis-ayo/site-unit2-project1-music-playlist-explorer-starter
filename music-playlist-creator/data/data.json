@@ -4,7 +4,7 @@
         "playlist_cover": "assets/img/topHits.jpg",
         "playlist_name": "Top Hits",
         "playlist_author": "Sandra Biss",
-        "playlist_likes": 5,
+        "playlist_likes": 100,
         "songs": [
             { "song_cover": "assets/img/singing1.jpg", "songTitle": "Ordinary", "artistName": "Taylor Swift", "albumName": "Ordinary", "songDuration": "03:06"},
             { "song_cover": "assets/img/singing3.jpg", "songTitle": "Easy Lover", "artistName": "Miley Cyrus", "albumName": "Something Beautiful", "songDuration": "03:06" },
@@ -18,7 +18,7 @@
         "playlist_cover": "assets/img/jazz.jpg",
         "playlist_name": "Jazz",
         "playlist_author": "Ruth Matthew",
-        "playlist_likes": 0,
+        "playlist_likes": 20,
         "songs": [
             { "song_cover": "assets/img/instrument1.jpg", "songTitle": "Wilting", "artistName": "Glass Trio", "albumName": "Wilting", "songDuration": "04:31" },
             { "song_cover": "assets/img/instrument2.jpg", "songTitle": "Carry On", "artistName": "Andy Luma Trio", "albumName": "Carry On", "songDuration": "03:14" },
@@ -32,7 +32,7 @@
         "playlist_cover": "assets/img/dancehall.jpg",
         "playlist_name": "Dancehall",
         "playlist_author": "Abiba Jim",
-        "playlist_likes": 0,
+        "playlist_likes": 18929,
         "songs": [
             { "song_cover": "assets/img/song.png","songTitle": "Hold Yuh", "artistName": "Gyptian", "albumName": "EP", "songDuration": "03:52" },
             { "song_cover": "assets/img/singing4.jpg","songTitle": "Like Glue", "artistName": "Sean Paul", "albumName": "EP", "songDuration": "03:52" },
@@ -44,7 +44,7 @@
         "playlist_cover": "assets/img/afrobeat.jpg",
         "playlist_name": "Afrobeat",
         "playlist_author": "Bayo Dell",
-        "playlist_likes": 0,
+        "playlist_likes": 10000,
         "songs": [
             { "song_cover": "assets/img/dancing2.jpg", "songTitle": "Last Last", "artistName": "Burna Boy", "albumName": "Love, Damini", "songDuration": "02:52" },
             { "song_cover": "assets/img/dancing1.jpg", "songTitle": "Essence (feat Justin Beiber)", "artistName": "Wizkid, Tems", "albumName": "Made In Lagos", "songDuration": "00:00" },
@@ -58,7 +58,7 @@
         "playlist_cover": "assets/img/happyHits.jpg",
         "playlist_name": "Happy Hits",
         "playlist_author": "Smith Smith",
-        "playlist_likes": 0,
+        "playlist_likes": 122,
         "songs": [
             { "song_cover": "assets/img/singing3.jpg", "songTitle": "Cruel Summer", "artistName": "Taylor Swift", "albumName": "Lover", "songDuration": "02:58" },
             { "song_cover": "assets/img/singing3.jpg", "songTitle": "Espresso", "artistName": "Sabrina Carpenter", "albumName": "Espresso", "songDuration": "02:55" },
@@ -70,7 +70,7 @@
         "playlist_cover": "assets/img/instrumentalMix.jpg",
         "playlist_name": "Instrumentals Mix",
         "playlist_author": "Daniel Yan",
-        "playlist_likes": 0,
+        "playlist_likes": 131,
         "songs": [
             { "song_cover": "assets/img/instrumentalMix2.jpg", "songTitle": "Azure", "artistName": "Crystal Dreams", "albumName": "Oceans", "songDuration": "02:32" },
             { "song_cover": "assets/img/instrument1.jpg", "songTitle": "Skyline", "artistName": "TAPI", "albumName": "Skyline", "songDuration": "02:10" },
@@ -84,7 +84,7 @@
         "playlist_cover": "assets/img/worship.jpg",
         "playlist_name": "Worship",
         "playlist_author": "John David",
-        "playlist_likes": 0,
+        "playlist_likes": 12344,
         "songs": [
             { "song_cover": "assets/img/song.png", "songTitle": "Be Glad (live)", "artistName": "Naomi Raine", "albumName": "Be Glad (live)", "songDuration": "08:53" },
             { "song_cover": "assets/img/song.png", "songTitle": "All Fall Down - Live", "artistName": "The Belonging Co, Henry Seeley", "albumName": "Eden (live)", "songDuration": "08:27" },
@@ -96,7 +96,7 @@
         "playlist_cover": "assets/img/afrogospel.jpg",
         "playlist_name": "AfroGospel",
         "playlist_author": "Ruth Matthew",
-        "playlist_likes": 0,
+        "playlist_likes": 33,
         "songs": [
             { "song_cover": "assets/img/song.png", "songTitle": "No Turing Back II", "artistName": "Gaise Baba, Lawrence Oyor", "albumName": "No Turning Back II", "songDuration": "04:59" },
             { "song_cover": "assets/img/control1.jpg", "songTitle": "Bigger(Odogwu)", "artistName": "Prinx Emmanuel", "albumName": "Bigger(Odogwu)", "songDuration": "02:56" },

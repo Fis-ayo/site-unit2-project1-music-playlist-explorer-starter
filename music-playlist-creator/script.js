@@ -32,7 +32,7 @@ function renderPlaylists() {
                 container.appendChild(card);
 
                 const modal = document.querySelector(".modal-overlay");
-                const art = document.querySelector(".cover-img");
+                const art = card.querySelector(".cover-img");
                 art.addEventListener('click', () => {
                     modal.style.display = 'flex';
 
@@ -52,7 +52,7 @@ function renderPlaylists() {
                     <div class="songs"></div>
                     `;
                     const playlistSongs = document.querySelector(".songs");
-                    playlist.songs.forEach((songDetail, index) => {
+                    playlist.songs.forEach((songDetail) => {
 
                         const song = document.createElement('div');
                         song.className = 'playlist-song';
@@ -126,9 +126,12 @@ function renderPlaylists() {
         .catch(error => console.error('Error fetching playlist:', error));
 };
 
+renderPlaylists();
+
+
 const addPlaylist = document.getElementById('add-playlist-btn');
 const formOverlay = document.getElementById('form-overlay');
-const closePlaylist = document.querySelector(".close");
+const closePlaylist = document.querySelector(".closePlaylist");
 
 closePlaylist.addEventListener('click', () => {
     formOverlay.style.display = 'none';
@@ -143,6 +146,3 @@ closePlaylist.addEventListener('click', () => {
 addPlaylist.addEventListener("click", () => {
     formOverlay.style.display = 'flex';
 })
-renderPlaylists();
-
-

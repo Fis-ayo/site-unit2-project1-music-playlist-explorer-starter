@@ -1,6 +1,7 @@
 :root {
-    --textColor:var(#1a1a1a);
+    --textColor:var(#c64b4b);
 }
+
 
 body {
     font-family: 'Inter', sans-serif;
@@ -55,7 +56,10 @@ nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
-    margin: 100px;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
 .playlist-card {
@@ -213,6 +217,7 @@ nav {
     font-size: 11px;
 } 
 
+
 #add-playlist-btn {
     display: flex;
     flex-direction: row;
@@ -263,23 +268,50 @@ nav {
     width: 100%;
     padding: 8px;
     margin-top: 8px;
-    border: 1px solid #c0afaf;
+    margin-bottom: 12px;
+    border: 0px solid #c0afaf;
     border-radius: 5px;
-    box-shadow: inset;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 #createPlaylist {
     border: none;
-    margin-top: 12px;
     padding: 8px 12px;
     background-color: rgb(102, 102, 245);
     color: white;
     border-radius: 4px;
     cursor: pointer;
-    margin: 20px auto 0 auto;
+    margin: 20px auto 0px auto;
     display: block;
+    font-weight: 100;
+    font-size: 16px;
 }
 
 #createPlaylist:hover{
     background-color: rgb(69, 69, 245);
+}
+
+.newSong {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    border: none;
+    background-color: #aaa;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.closePlaylist {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closePlaylist:hover,
+.closePlaylist:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }

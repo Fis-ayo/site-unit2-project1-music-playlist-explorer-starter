@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Playlist Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1 id="title">Music Playlist Explorer 🎧</h1>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="index.html" id="featured">Featured</a></li>
+                    <li><a href="all.html" id="all">All</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <div id="add-playlist-btn">
+        <span class="plusIcon">&plus;</span>
+        <span id="newPlaylistText">New Playlist</span>
+    </div>
+    <div id="form-overlay">
+        <div id="form-content">
+            <span class="closePlaylist"> &times; </span>
+            <form id="playlist-form">
+                <h2>Create New Playlist</h2>
+                <input type="text" placeholder="Title" id="new-name"required>
+                <input type="text" id="new-author" placeholder="Author"required>
+
+                <div id="songs-container">
+                    <div class="song-row">
+                        <input type="text" placeholder="Song name" class="song-name" />
+                        <input type="text" placeholder="Artist name" class="artist-name" />
+                        <input type="text" placeholder="Album name" class="album name" />
+                        <input type="text" placeholder="Song duration" class="song-duration" />
+                    </div>
+                </div>
+                <button class="newSong">add song</button>
+                <br><br>
+
+                <button type="submit" id="createPlaylist">Create Playlist</button>
+            </form>
+        </div>
+    </div>
+
+
+    <main>
+        <!-- Your main content here -->
+
+
+        <div class="playlist-cards">
+        </div>
+
+    </main>
+
+    <div class="modal-overlay">
+        <div class="modal-content">
+        </div>
+    </div>
+
+    <footer>
+        <p>Mercy Akinyemi</p>
+        <p>Copyright &copy; 2025 Your Company. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

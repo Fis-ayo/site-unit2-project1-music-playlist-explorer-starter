@@ -6,70 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Music Playlist Explorer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <!-- Your header content here -->
-
-        <h2 id="title">Music Playlist Explorer</h2>
-        <nav>
-            <a href="featured.html" id="featured">Featured</a>
-            <a href="index.html" id="all">All</a>
-        </nav>
+        <div class="header-container">
+            <h1 id="title">Music Playlist Explorer 🎧</h1>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="index.html" id="featured">Featured</a></li>
+                    <li><a href="all.html" id="all">All</a></li>
+                </ul>
+            </nav>
+        </div>
 
     </header>
 
-    <div id="add-playlist-btn">
-        <span class="plusIcon">&plus;</span>
-        <span id="newPlaylistText">New Playlist</span>
-    </div>
-    <div id="form-overlay">
-        <div id="form-content">
-            <span class="closePlaylist"> &times; </span>
-            <form id="playlist-form">
-                <h2>Create New Playlist</h2>
-                <label for="playlist-name">Playlist Name:</label>
-                <input type="text" id="playlist-name" name="playlist-name" required>
-                <label for="playlist-author">Creator:</label>
-                <input type="text" id="playlist-author" name="playlist-name" required>
-                <button class="newSong">add song</button>
-                <br><br>
-
-                <button type="submit" id="createPlaylist">Create Playlist</button>
-            </form>
-        </div>
-    </div>
-
-
     <main>
-        <!-- Your main content here -->
+        <section class="feature-playlist">
+            <div class="playlist-container">
+                <div class="playlist-detail">
+                    <div class="playlist-img"></div>
+                    <h2 class="playlist-name"></h2>
+                </div>
 
+                <ul class="song-list">
 
-        <div class="playlist-cards">
-        </div>
+                </ul>
+            </div>
+        </section>
 
     </main>
-
-    <div class="modal-overlay">
-        <div class="modal-content">
-        </div>
-    </div>
 
     <footer>
         <p>Mercy Akinyemi</p>
         <p>Copyright &copy; 2025 Your Company. All Rights Reserved.</p>
     </footer>
 
-
-    <script src="script.js"></script>
+    <script src="featured.js"></script>
 </body>
 
 </html>

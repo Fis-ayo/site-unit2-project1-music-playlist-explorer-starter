@@ -1,4 +1,6 @@
 // Function to display each of the playlist cards
+let playlists = [];
+
 const details = document.querySelector(".modal-content");
 
 const heartIcon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#e222af" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>'
@@ -7,16 +9,24 @@ const heartIcon_plain = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51
 function renderPlaylists() {
     fetch('data/data.json')
         .then(response => response.json())
-        .then(playlists => {
+        .then(data => {
+            playlists = data;
+            displayPlaylists(playlists);
+        
+        })
+    .catch(error => console.error('Error fetching playlist:', error));
+}
+
+function displayPlaylists(playlistsToRender){
             const container = document.querySelector('.playlist-cards');
             container.innerHTML = '';
 
-            if (playlists.length === 0) {
+            if (playlistsToRender.length === 0) {
                 container.innerHTML = `<p class="emptyPlaylist"> No Playlist Added </p>`;
                 return;
             }
 
-            playlists.forEach((playlist, index) => {
+            playlistsToRender.forEach((playlist, index) => {
                 const card = document.createElement('div');
                 card.className = 'playlist-card';
 
@@ -124,16 +134,16 @@ function renderPlaylists() {
             });
 
 
-        })
-        .catch(error => console.error('Error fetching playlist:', error));
+        
 };
 
-renderPlaylists();
 
+renderPlaylists();
 
 const addPlaylist = document.getElementById('add-playlist-btn');
 const formOverlay = document.getElementById('form-overlay');
 const closePlaylist = document.querySelector(".closePlaylist");
+
 
 closePlaylist.addEventListener('click', () => {
     formOverlay.style.display = 'none';
@@ -148,3 +158,39 @@ closePlaylist.addEventListener('click', () => {
 addPlaylist.addEventListener("click", () => {
     formOverlay.style.display = 'flex';
 })
+
+const form = document.querySelector("#playlist-form");
+
+form.addEventListener('submit', function(e) {
+
+    e.preventDefault();
+    const name = document.getElementById("new-name").value.trim();
+    const author = document.getElementById("new-author").value.trim();
+    // const newSong = document.querySelector('.song-row').value.split("\n").map(line => {
+    //     const [title, artist, duration] = line.split("-").map(s=> s.trim());
+    //     return {title, artist, duration};
+    //});
+    // const cover = document.getElementById("playlist-cover").value.trim();
+
+    const newPlaylist = {
+        playlistID: Date.now(),
+        playlist_cover: "assets/img/playlist.png",
+        playlist_name: name,
+        playlist_author: author,
+        playlist_likes: 0,
+        songs:[]
+    };
+    playlists.push(newPlaylist);
+    displayPlaylists(playlists);
+    form.reset();
+    document.getElementById("form-overlay").style.display="none";
+});
+
+// document.querySelector('.newSong').addEventListener('click', () => {
+//     const songRow = document.createElement('div');
+//     songRow.className = "song-row";
+
+//     songRow.innerHTML
+
+// })
+

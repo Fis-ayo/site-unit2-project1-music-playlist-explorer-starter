@@ -153,6 +153,7 @@ footer {
     flex-direction: row;
     gap: 10px;
     font-size: 15px;
+    margin-bottom: 0;
 }
 
 @media (max-width: 600px) {
@@ -191,7 +192,7 @@ footer {
     display: flex;
     justify-content: flex-end;
     gap: 5x;
-    margin: 10px;
+    margin: 0 10px 10px 10px;
 }
 
 .card-actions button {
@@ -343,11 +344,20 @@ footer {
     justify-content: flex-end;
     gap: 5px;
     margin: 15px;
-    cursor: pointer;
 }
 
-#add-playlist-btn:hover{
-    color: #183ebb;
+#add-playlist-btn button {
+    border: none;
+    background: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin: 15px;
+}
+
+#add-playlist-btn button:hover {
+    background-color: white;
+    padding: 5px;
 }
 
 #newPlaylistText{
@@ -363,28 +373,30 @@ footer {
 #form-overlay {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     left: 0;
     top: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     overflow: auto;
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
-    z-index: 1000;
 }
 
 #form-content {
-    position: relative;
     background-color: #fefefe;
     margin: auto;
     padding: 30px;
     border: 1px solid #888;
-    width: 25%;
-    height: 30%;
+    width: 90%;
+    height: auto;
     border-radius: 10px;
+    max-width: 500px;
+    max-height: 500px;
+    overflow-y: auto;
+    word-wrap: break-word;
 }
 
 #form-content h2 {
@@ -542,6 +554,10 @@ footer {
     border-radius: 10px;
     padding: 0;
     border: none;
+}
+
+#search-btn {
+    font-size: 15px;
 }
 
 #sort-dropdown {

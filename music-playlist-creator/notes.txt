@@ -1,140 +1,28 @@
-const addPlaylist = document.getElementById('add-playlist-btn');
-const formOverlay = document.getElementById('form-overlay');
-const closePlaylist = document.querySelector(".closePlaylist");
-
-closePlaylist.addEventListener('click', () => {
-    formOverlay.style.display = 'none';
-});
-
-// window.addEventListener('click', (event) => {
-//     if (event.target === modal) {
-//         modal.style.display = 'none';
-//     }
-// });
-
-addPlaylist.addEventListener("click", () => {
-    formOverlay.style.display = 'flex';
-})
-
-
-
-<div id="add-playlist-btn">
-        <span class="plusIcon">&plus;</span>
-        <span>New Playlist</span>
-    </div>
-    <div id="form-overlay">
-        <div id="form-content">
-            <span class="closePlaylist"> &times; </span>
-            <form id="playlist-form">
-                <h2>Create New Playlist</h2>
-                <label for="playlist-name">Playlist Name:</label>
-                <input type="text" id="playlist-name" name="playlist-name" required>
-                <label for="playlist-author">Creator:</label>
-                <input type="text" id="playlist-author" name="playlist-name" required>
-                <button class="newSong">Add Song</button>
-                <br><br>
-
-                <button type="submit" id="createPlaylist">Create Playlist</button>
-            </form>
-        </div>
-    </div>
-
-
-
-#add-playlist-btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 5px;
-    margin: 15px;
-    cursor: pointer;
-}
-
-.plusIcon {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-#form-overlay {
+.modal-overlay {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     left: 0;
     top: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     overflow: auto;
-    align-items: center;
-    justify-content: center;
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
-    z-index: 1000;
+    justify-content: center;
+    align-items: center;
 }
 
-#form-content {
-    position: relative;
+.modal-content {
     background-color: #fefefe;
     margin: auto;
-    padding: 30px;
+    padding: 20px;
     border: 1px solid #888;
-    width: 25%;
-    height: 30%;
+    width: 90%;
+    height: auto;
     border-radius: 10px;
-}
-
-#form-content h2 {
-    margin-top: 0;
-    justify-self: center;
-}
-
-#form-content input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 8px;
-    margin-bottom: 12px;
-    border: 0px solid #c0afaf;
-    border-radius: 5px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-}
-
-#createPlaylist {
-    border: none;
-    padding: 8px 12px;
-    background-color: rgb(102, 102, 245);
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 20px auto 0px auto;
-    display: block;
-    font-weight: 100;
-    font-size: 16px;
-}
-
-#createPlaylist:hover{
-    background-color: rgb(69, 69, 245);
-}
-
-.newSong {
-    display: block;
-    margin-left: auto;
-    margin-right: 0;
-    border: none;
-    background-color: #aaa;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.closePlaylist {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.closePlaylist:hover,
-.closePlaylist:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    word-wrap: break-word;
 }

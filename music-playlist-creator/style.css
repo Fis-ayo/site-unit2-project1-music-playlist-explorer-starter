@@ -1,26 +1,30 @@
 :root {
-    --textColor:var(#c64b4b);
+    --bg-color: #ebebeb;
+    --font-main: 'Inter', sans-serif;
+    --text-color: #222;
 }
 
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-main);
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background: var(--bg-color);
+    color: var(--text-color);
+    width: 100%;
 }
 
 header {
     display: flex;
     border: 1px;
     justify-content: space-between;
-    background-color: rgb(209, 207, 207);
+    background-color: #e7cfcf;
 }
 
 footer {
     display: flex;
     flex-direction: column;
-    background-color: #e7cfcf;
+    background-color: rgb(220, 220, 220);
     border: 1px;
     margin: 0;
     align-items: center;
@@ -41,6 +45,7 @@ nav {
     text-decoration: none;
     color: black;
 }
+
 #featured:hover,
 #all:hover {
     color: rgb(61, 54, 161);
@@ -54,35 +59,54 @@ nav {
 
 .playlist-cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 40px;
-
-    max-width: 1200px;
+    max-width: calc(4 * 250px + 3 * 40px);
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 20px;
 }
 
+
 .playlist-card {
-    height: 450px;
+    height: auto;
+    aspect-ratio: 3 / 4;
     border: 1px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.playlist-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
 .playlist-card h3 {
     margin: 30px 0 10px 30px;
+    font-size: 18px;
 }
 
-.playlist-card p,
+.playlist-card p{
+    margin: 5px 0 5px 30px;
+    font-size: 14px;
+    flex-grow: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 .playlist-card .like-btn {
     margin: 15px 0 5px 30px;
-    color: var(--textColor);
+    font-size: 14px;
 }
 
 .cover-img {
     width: 100%;
     height: 68%;
     border-radius: 10px 10px 0 0;
+    object-fit: cover;
     cursor: pointer;
 }
 
@@ -91,6 +115,12 @@ nav {
     flex-direction: row;
     gap: 10px;
     font-size: 15px;
+}
+
+@media (max-width: 400px) {
+    .playlist-card {
+        font-size: 14px;
+    }
 }
 
 .Icon {
@@ -227,9 +257,18 @@ nav {
     cursor: pointer;
 }
 
+#add-playlist-btn:hover{
+    color: #183ebb;
+}
+
+#newPlaylistText{
+    font-size: 15px;
+}
+
 .plusIcon {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
+    line-height: 1;
 }
 
 #form-overlay {
@@ -314,4 +353,15 @@ nav {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.feature-playlist {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.playlist-detail {
+    flex: 1;
+    text-align: center;
 }

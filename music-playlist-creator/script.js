@@ -22,10 +22,12 @@ function renderPlaylists() {
 
                 card.innerHTML = `
                 <img src="${playlist.playlist_cover}" alt="${playlist.playlist_name} Cover" class="cover-img"/>
+                <div class = "playlist-info">
                 <h3>${playlist.playlist_name}</h3>
                 <p>Created by ${playlist.playlist_author}</p>
                 <div class="like-btn" data-index="${index}">
                 <div class="Icon">${heartIcon_plain} </div> <span class="like-cnt">${playlist.playlist_likes}</span>
+                </div>
                 </div>
                 `;
 

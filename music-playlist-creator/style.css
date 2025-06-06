@@ -107,7 +107,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 40px;
-    max-width: calc(4 * 250px + 3 * 40px);
     margin: 40px auto;
     padding: 20px;
 }
@@ -589,7 +588,7 @@ footer {
     position: sticky;
     z-index: 999;
     top: 60px;
-    padding: 10px;
+    padding: 30px;
 
 }
 

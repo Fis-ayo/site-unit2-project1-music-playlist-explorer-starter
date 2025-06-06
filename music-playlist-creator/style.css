@@ -17,14 +17,27 @@ body {
     width: 100%;
 }
 
+/* header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+} */
+
+/* main {
+    margin-top: 200px;
+} */
 .header-container {
     display: flex;
     border: 1px;
     align-items: center;
     justify-content: space-between;
     padding: 15px 30px 15px 30px;
-    background-color: #e7cfcf;
+    background-color: #1e1a1a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
+
 
 .nav-bar {
     display: flex;
@@ -45,7 +58,7 @@ body {
 
 .nav-bar a {
     text-decoration: none;
-    color: #000;
+    color: white;
     font-weight: bold;
 }
 
@@ -64,7 +77,9 @@ footer {
 }
 
 #title {
+    color: white;
     margin: 20px;
+    font-size: 30px;
 }
 
 .emptyPlaylist {
@@ -171,6 +186,21 @@ footer {
 .Icon {
     width: 15px;
 }
+
+.card-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5x;
+    margin: 10px;
+}
+
+.card-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
 
 /* Styling for the pop up */
 
@@ -480,4 +510,43 @@ footer {
     color: #666;
 }
 
+.song-row {
+    display: flexx;
+    gap: 10px;
+    margin-bottom: 10px;
+}
 
+.song-row input {
+    flex: 1;
+}
+
+#search-bar {
+    display: flex;
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 500px;
+    justify-content: center;
+}
+
+#search-bar input {
+    flex: 1;
+    padding: 8px 12px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: inset;
+}
+
+#search-bar button {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 0;
+    border: none;
+}
+
+#sort-dropdown {
+    padding: 4px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+}

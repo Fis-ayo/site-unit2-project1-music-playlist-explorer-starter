@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Music Playlist Explorer</title>
+    <title>Explore Music Playlists</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,7 +18,7 @@
 <body>
     <header>
         <div class="header-container">
-            <h1 id="title">Music Playlist Explorer 🎧</h1>
+            <h1 id="title">Explore Music Playlists 🎧</h1>
             <nav class="nav-bar">
                 <ul>
                     <li><a href="index.html" id="featured">Featured</a></li>
@@ -28,28 +28,35 @@
         </div>
 
     </header>
-
-    <div id="add-playlist-btn">
-        <span class="plusIcon">&plus;</span>
-        <span id="newPlaylistText">New Playlist</span>
+    <div class="content-actions">
+        <div id="add-playlist-btn">
+            <span class="plusIcon">&plus;</span>
+            <span id="newPlaylistText">New Playlist</span>
+        </div>
+        <div id="search-bar">
+            <input type="text" id="search-input" placeholder="Search by name or author..." />
+            <button id="search-btn">🔍</button>
+            <button id="clear-search-btn">clear</button>
+            <select id="sort-dropdown">
+                <option value="none">Sort by</option>
+                <option value="az">A-Z</option>
+                <option value="za">Z-A</option>
+            </select>
+        </div>
     </div>
+
+
+
     <div id="form-overlay">
         <div id="form-content">
             <span class="closePlaylist"> &times; </span>
             <form id="playlist-form">
                 <h2>Create New Playlist</h2>
-                <input type="text" placeholder="Title" id="new-name"required>
-                <input type="text" id="new-author" placeholder="Author"required>
-
+                <input type="text" placeholder="Title" id="new-name" required>
+                <input type="text" id="new-author" placeholder="Author" required>
+                <button type="button" class="newSong">add song</button>
                 <div id="songs-container">
-                    <div class="song-row">
-                        <input type="text" placeholder="Song name" class="song-name" />
-                        <input type="text" placeholder="Artist name" class="artist-name" />
-                        <input type="text" placeholder="Album name" class="album name" />
-                        <input type="text" placeholder="Song duration" class="song-duration" />
-                    </div>
                 </div>
-                <button class="newSong">add song</button>
                 <br><br>
 
                 <button type="submit" id="createPlaylist">Create Playlist</button>

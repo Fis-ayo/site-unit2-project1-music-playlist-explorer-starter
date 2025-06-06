@@ -12,25 +12,25 @@ function renderPlaylists() {
         .then(data => {
             playlists = data;
             displayPlaylists(playlists);
-        
+
         })
-    .catch(error => console.error('Error fetching playlist:', error));
+        .catch(error => console.error('Error fetching playlist:', error));
 }
 
-function displayPlaylists(playlistsToRender){
-            const container = document.querySelector('.playlist-cards');
-            container.innerHTML = '';
+function displayPlaylists(playlistsToRender) {
+    const container = document.querySelector('.playlist-cards');
+    container.innerHTML = '';
 
-            if (playlistsToRender.length === 0) {
-                container.innerHTML = `<p class="emptyPlaylist"> No Playlist Added </p>`;
-                return;
-            }
+    if (playlistsToRender.length === 0) {
+        container.innerHTML = `<p class="emptyPlaylist"> No Playlist Added </p>`;
+        return;
+    }
 
-            playlistsToRender.forEach((playlist, index) => {
-                const card = document.createElement('div');
-                card.className = 'playlist-card';
+    playlistsToRender.forEach((playlist, index) => {
+        const card = document.createElement('div');
+        card.className = 'playlist-card';
 
-                card.innerHTML = `
+        card.innerHTML = `
                 <img src="${playlist.playlist_cover}" alt="${playlist.playlist_name} Cover" class="cover-img"/>
                 <div class = "playlist-info">
                 <h3>${playlist.playlist_name}</h3>
@@ -39,16 +39,52 @@ function displayPlaylists(playlistsToRender){
                 <div class="Icon">${heartIcon_plain} </div> <span class="like-cnt">${playlist.playlist_likes}</span>
                 </div>
                 </div>
+
+                <div class="card-actions">
+                    <button class="edit-btn" data-index="${index}">✍🏼</button>
+                    <button class="delete-btn" data-index="${index}">🗑️</button>
+                </div>
+            `;
+
+        container.appendChild(card);
+
+        card.querySelector(".delete-btn").addEventListener('click', () => {
+            playlists.splice(index, 1);
+            displayPlaylists(playlists);
+        });
+
+        card.querySelector(".edit-btn").addEventListener('click', () => {
+            const current = playlists[index];
+
+            document.getElementById("new-name").value = current.playlist_name;
+            document.getElementById("new-author").value = current.playlist_author;
+
+            document.getElementById("songs-container").innerHTML = "";
+
+            playlist.songs.forEach(song => {
+                const row = document.createElement("div");
+                row.className = "song-row";
+                row.innerHTML = `
+                <input text="text" value="${song.songTitle}" class="song-name" />
+                <input text="text" value="${song.artistName}" class="artist-name" />
+                <input text="text" value="${song.albumName}" class="album-name" />
+                <input text="text" value="${song.songDuration}" class="song-duration" />
                 `;
 
-                container.appendChild(card);
+                document.getElementById("songs-container").appendChild(row);
+            });
 
-                const modal = document.querySelector(".modal-overlay");
-                const art = card.querySelector(".cover-img");
-                art.addEventListener('click', () => {
-                    modal.style.display = 'flex';
+            document.getElementById("form-overlay").style.display = "flex";
 
-                    details.innerHTML = `
+            form.setAttribute("data-edit-index", index);
+        });
+
+        const modal = document.querySelector(".modal-overlay");
+        const art = card.querySelector(".cover-img");
+        art.addEventListener('click', () => {
+            modal.style.display = 'flex';
+
+            details.innerHTML = `
                     <span class="close"> &times; </span>
                     <div class="playlist-head">
                         <img src="${playlist.playlist_cover}" alt="${playlist.playlist_name} Cover" class="detail-img"/>
@@ -63,12 +99,12 @@ function displayPlaylists(playlistsToRender){
 
                     <div class="songs"></div>
                     `;
-                    const playlistSongs = document.querySelector(".songs");
-                    playlist.songs.forEach((songDetail) => {
+            const playlistSongs = document.querySelector(".songs");
+            playlist.songs.forEach((songDetail) => {
 
-                        const song = document.createElement('div');
-                        song.className = 'playlist-song';
-                        song.innerHTML = `
+                const song = document.createElement('div');
+                song.className = 'playlist-song';
+                song.innerHTML = `
                         <img src="${songDetail.song_cover}" alt="${songDetail.songTitle} Cover" class="song-img"/>
 
                         <div class = "textDetail">
@@ -79,66 +115,68 @@ function displayPlaylists(playlistsToRender){
 
                         <p class="duration">${songDetail.songDuration}</p>
                         `;
-                        playlistSongs.appendChild(song);
-                    });
-
-                    const closeBtn = document.querySelector(".close");
-                    closeBtn.addEventListener('click', () => {
-                        modal.style.display = 'none';
-                    });
-
-                    window.addEventListener('click', (event) => {
-                        if (event.target === modal) {
-                            modal.style.display = 'none';
-                        }
-                    });
-
-                    const shuffle = document.querySelector(".shuffle-btn");
-                    shuffle.addEventListener('click', () => {
-                        const songContainer = document.querySelector('.songs');
-                        const cards = Array.from(songContainer.children);
-
-                        for (let i = cards.length - 1; i > 0; i--) {
-                            const j = Math.floor(Math.random() * (i + 1));
-                            [cards[i], cards[j]] = [cards[j], cards[i]];
-                        }
-
-                        songContainer.innerHTML = "";
-                        cards.forEach(card => songContainer.appendChild(card));
-                    });
-
-                });
+                playlistSongs.appendChild(song);
             });
 
-            document.querySelectorAll('.like-btn').forEach(button => {
-                let icon = button.querySelector(".Icon");
-                let liked = false;
-
-                icon.addEventListener("click", () => {
-                    const countSpan = button.querySelector('.like-cnt');
-                    let likes = parseInt(countSpan.textContent);
-
-                    liked = !liked;
-                    likes += liked ? 1 : -1;
-
-                    countSpan.textContent = likes;
-                    button.classList.toggle('liked');
-                    console.log(liked)
-                    if (liked == true) {
-                        icon.innerHTML = `${heartIcon}`;
-                    } else {
-                        icon.innerHTML = `${heartIcon_plain}`;
-                    }
-                });
-
+            const closeBtn = document.querySelector(".close");
+            closeBtn.addEventListener('click', () => {
+                modal.style.display = 'none';
             });
 
+            window.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
 
-        
+            const shuffle = document.querySelector(".shuffle-btn");
+            shuffle.addEventListener('click', () => {
+                const songContainer = document.querySelector('.songs');
+                const cards = Array.from(songContainer.children);
+
+                for (let i = cards.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [cards[i], cards[j]] = [cards[j], cards[i]];
+                }
+
+                songContainer.innerHTML = "";
+                cards.forEach(card => songContainer.appendChild(card));
+            });
+
+        });
+    });
+
+    document.querySelectorAll('.like-btn').forEach(button => {
+        let icon = button.querySelector(".Icon");
+        let liked = false;
+
+        icon.addEventListener("click", () => {
+            const countSpan = button.querySelector('.like-cnt');
+            let likes = parseInt(countSpan.textContent);
+
+            liked = !liked;
+            likes += liked ? 1 : -1;
+
+            countSpan.textContent = likes;
+            button.classList.toggle('liked');
+            console.log(liked)
+            if (liked == true) {
+                icon.innerHTML = `${heartIcon}`;
+            } else {
+                icon.innerHTML = `${heartIcon_plain}`;
+            }
+        });
+
+    });
+
+
+
 };
 
 
 renderPlaylists();
+
+
 
 const addPlaylist = document.getElementById('add-playlist-btn');
 const formOverlay = document.getElementById('form-overlay');
@@ -160,8 +198,27 @@ addPlaylist.addEventListener("click", () => {
 })
 
 const form = document.querySelector("#playlist-form");
+const songRows = document.querySelectorAll(".song-row");
+const songs = [];
 
-form.addEventListener('submit', function(e) {
+songRows.forEach(row => {
+    const title = row.querySelector(".song-name")?.value.trim();
+    const artist = row.querySelector(".artist-name")?.value.trim();
+    const album = row.querySelector(".album-name")?.value.trim();
+    const duration = row.querySelector(".song-duration")?.value.trim();
+
+    if (title && artist){
+        songs.push({
+            song_cover: "assets/img/song.png", 
+            songTitle: title, 
+            artistName: artist, 
+            albumName: album, 
+            songDuration: duration
+        })
+    };
+});
+
+form.addEventListener('submit', function (e) {
 
     e.preventDefault();
     const name = document.getElementById("new-name").value.trim();
@@ -178,19 +235,67 @@ form.addEventListener('submit', function(e) {
         playlist_name: name,
         playlist_author: author,
         playlist_likes: 0,
-        songs:[]
+        songs: songs
     };
-    playlists.push(newPlaylist);
+    // playlists.push(newPlaylist);
+    const editIndex = form.getAttribute("data-edit-index");
+    if (editIndex !== null){
+        playlists[editIndex] = newPlaylist;
+        form.removeAttribute("data-edit-index");
+    }else {
+        playlists.push(newPlaylist);
+    }
     displayPlaylists(playlists);
     form.reset();
-    document.getElementById("form-overlay").style.display="none";
+    document.getElementById("form-overlay").style.display = "none";
 });
 
-// document.querySelector('.newSong').addEventListener('click', () => {
-//     const songRow = document.createElement('div');
-//     songRow.className = "song-row";
+document.querySelector(".newSong").addEventListener("click", () => {
+    const songContainer = document.getElementById("songs-container");
 
-//     songRow.innerHTML
+    const songRow = document.createElement("div");
+    songRow.className = "song-row";
 
-// })
+    songRow.innerHTML = `
+    <input type="text" placeholder="Song name" class="song-name" />
+    <input type="text" placeholder="Artist name" class="artist-name" />
+    <input type="text" placeholder="Album name" class="album name" />
+    <input type="text" placeholder="Song duration" class="song-duration" />
+    `;
 
+    songContainer.appendChild(songRow);
+})
+
+document.getElementById("clear-search-btn").addEventListener('click', () => {
+    document.getElementById("search-input").value= '';
+    document.getElementById("sort-dropdown").value= 'none';
+    displayPlaylists(playlists);
+});
+
+
+document.getElementById("sort-dropdown").addEventListener('change', filterAndSortPlaylists);
+document.getElementById("search-btn").addEventListener('click', filterAndSortPlaylists);
+
+document.getElementById("search-input").addEventListener('keyup', (e) => {
+    if(e.key === "Enter"){
+        filterAndSortPlaylists();
+    }
+})
+
+function filterAndSortPlaylists() {
+    const query = document.getElementById("search-input").value.toLowerCase();
+    const sort = document.getElementById("sort-dropdown").value;
+
+    let result = playlists.filter(p =>
+        p.playlist_name.toLowerCase().includes(query) ||
+        p.playlist_author.toLowerCase().includes(query)
+    );
+
+    if(sort === "az") {
+        result.sort((a, b) => a.playlist_name.localeCompare(b.playlist_name));
+    }else if (sort === "za"){
+        result.sort((a, b) => b.playlist_name.localeCompare(a.playlist_name));
+    }
+
+    displayPlaylists(result);
+}

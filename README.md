@@ -131,7 +131,14 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](ADD
 ### Walkthrough Video
 
 
-`<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/553297c1ded7444ea22e0480c2270d76?sid=359ac470-604e-4306-b8de-899488fbb1e9" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>`
+`<div>
+    <a href="https://www.loom.com/share/553297c1ded7444ea22e0480c2270d76">
+      <p>Website Features Overview - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/553297c1ded7444ea22e0480c2270d76">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/553297c1ded7444ea22e0480c2270d76-4689523f325ef117-full-play.gif">
+    </a>
+  </div>`
 
 ### Reflection
 

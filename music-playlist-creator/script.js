@@ -203,7 +203,8 @@ const form = document.querySelector("#playlist-form");
 
 
 form.addEventListener('submit', function (e) {
-
+    document.querySelector("form-title").textContent = "Create New Playlist";
+    document.getElementById("createPlaylist").textContent = "Create";
     e.preventDefault();
     const name = document.getElementById("new-name").value.trim();
     const author = document.getElementById("new-author").value.trim();
